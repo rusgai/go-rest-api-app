@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
+
+func Run() error {
+	fmt.Println("Run server api to routing gin.")
+	return nil
+}
 
 func main() {
-	fmt.Println("Hello")
+	if err := Run(); err != nil {
+		log.Fatalln()
+	}
 }
